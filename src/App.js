@@ -1,7 +1,14 @@
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+  const handleClick = () => {
+    alert("Im a alert folks!!!");
+  }
+
+
   return (
     <div className="App">
       <header className="App-header">
@@ -17,6 +24,9 @@ function App() {
         >
           Learn React
         </a>
+        <button style={{ height: "50px", marginTop: "16px", width: "100px" }} onClick={handleClick}>
+          Trigger the ALERT!!
+        </button>
       </header>
     </div>
   );
